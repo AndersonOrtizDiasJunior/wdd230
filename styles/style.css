@@ -1,0 +1,80 @@
+:root {
+    --headerColor: #3E8DE3;
+}
+
+header {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 95%;
+    margin-left: 2.5%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 1fr fit-content(100%) 1fr;
+    background-color: var(--headerColor);
+    font-size: 3em;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+  }
+  
+  header img {
+    grid-row: 1/4;
+    grid-column: 1/2;
+    /* width: 90%; */
+    margin-left: calc(50% - 120px);
+    margin-bottom: 5%;
+    margin-top: 5%;
+    box-shadow: 2px 2px 5px black;
+    height: 300px;
+  }
+  
+  
+  header h3 {
+    text-align: left;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+    color: white;
+  }
+
+  footer {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 95%;
+    margin-left: 2.5%;
+    display: grid;
+    background-color: var(--headerColor);
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px black;
+  }
+
+  #year {
+    margin-top: 2%;
+    font-size: 1.5em;
+    color: white;
+  }
+
+  #lastModfied {
+    margin-top: 5px;
+    margin-bottom: 2%;
+    color: yellow;
+  }
+
+  main {
+    text-align: left;
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  #title {
+    font-size: 2em;
+    color: rgb(59, 59, 59);
+    margin-bottom: -5px;
+  }
+
+  #lessonsList {
+    font-size: 1.2em;
+    letter-spacing: 2px;
+  }
