@@ -1,0 +1,11 @@
+@media (min-width: 32.5em) {
+  main {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  #lessonsList {    
+    list-style-type: none;
+  }
+}
