@@ -30,6 +30,7 @@ main {
   padding: 0 15px 15px 15px;
   border: 1px solid black; 
   border-radius: 7px 7px 0 0;
+  
 }
 
 .title {
@@ -45,8 +46,9 @@ main {
 }
 
 .card img {
-  width: 100%;
-  margin: 2% 0 2% 0;
+  width: 80%;
+  height: auto;
+  margin: 2% 10% 2% 10%;
 }
 
 footer {
