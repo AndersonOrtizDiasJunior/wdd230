@@ -29,7 +29,7 @@ main {
 	font-size: 1.2em;
 }
 h1, h2, h3 {
-	font-family: var(--paragraph-font);
+	font-family: var(--heading-font);
 }
 h1 {
 	font-size: 5em;
