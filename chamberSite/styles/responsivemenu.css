@@ -1,0 +1,145 @@
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	width: 100%;
+
+	font-family: var(--heading-font);
+}
+.navigation ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+.navigation .togglableLinks li a {
+	background-color: var(--primary-color);
+}
+.navigation .togglableLinks li a:hover {
+	background-color: var(--accent1-color);
+	color: var(--accent2-color);
+}
+.header {
+	display: grid;
+	grid-template-columns: 50px 5fr 1fr 1fr;
+	grid-template-rows: 1fr 0fr;
+	background-color: var(--secondary-color);
+	text-align: center;
+	padding: 10px;
+	color: var( --accent2-color);
+	vertical-align: middle;
+}
+
+.header .navLogo {
+	margin-top: 12px;
+	grid-row: 1/2;
+	grid-column: 1/2;
+}
+
+.header .name {
+	grid-row: 1/2;
+	grid-column: 2/3;
+	color: var(--accent2-color);
+}
+
+.header .name .chamberName{
+	font-size: 1.3em;
+}
+
+.header .socialMedia {
+	margin-top: 24px;
+	grid-row: 1/2;
+	grid-column: 3/4;
+	display: flex;
+}
+.header .socialMedia a {
+	padding: 3px;
+}
+
+.header .ham {
+	margin-top: 18px;
+	grid-row: 1/2;
+	grid-column: 4/5;
+	text-align: right;
+	color: var(--accent2-color);
+	font-size: 1.5em;
+	padding-right: 0;
+}
+
+.header .today {
+	grid-row: 2/3;
+	grid-column: 1/5;
+}
+
+.header ul {
+	display: none;
+}
+
+.navigation .togglableLinks li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.ham::before {
+	content: "=";
+}
+
+/* .navigation a:hover {
+	color: white;
+	background-color: black;
+} */
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive .togglableLinks li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "ⓧ";
+}
+
+/* Media Query for large views */
+@media only screen and (min-width: 65em) {
+	.header {
+		grid-template-columns: 50px 2fr 5fr 1fr;
+		grid-template-rows: 1fr 0fr;
+	}
+	.header .ham {
+		display: none;
+	}
+	.header ul {
+		display: flex;
+		grid-column: 3/4;
+		grid-row: 1/2;
+		background-color: var(--secondary-color);
+		
+	}
+	.header ul li{
+		padding: 12px; 
+	}
+	.header ul li a {
+		color: var(--accent2-color);
+	}
+	.header ul li:hover {
+		padding: 12px;
+		background-color: var(--accent1-color);
+	}
+	.header .socialMedia {
+		grid-column: 4/5;
+		margin-left: auto;
+		padding-right: 20px;
+	}
+	.navigation .togglableLinks li, .responsive .ßtogglableLinks li {
+		display: none;
+	}
+}

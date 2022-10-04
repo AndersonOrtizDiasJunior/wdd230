@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200&family=Josefin+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poiret+One&display=swap');
+
+:root {
+	--primary-color: #CCB25D   ;
+    --secondary-color: #003153 ;
+    --accent1-color: #5EBE8C;
+    --accent2-color: white;
+
+	--heading-font: 'Josefin Slab', serif;
+    --paragraph-font: 'Inter Tight', sans-serif;
+}
