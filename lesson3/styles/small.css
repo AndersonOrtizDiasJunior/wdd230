@@ -171,3 +171,19 @@ nav a:hover {
 	width: 20%;
 	margin-left: 40%;
 }
+
+footer {
+    margin-top: 2%;
+    width: 100%;
+    display: grid;
+    background-color: var(--secondary-color);
+	color: var(--accent2-color);
+	font-family: var(--heading-font);
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+
+  .persona {
+	border-radius: 50%;
+  }

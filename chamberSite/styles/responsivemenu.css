@@ -2,7 +2,8 @@
 nav {
 	margin: 0 auto;
 	width: 100%;
-
+	position: fixed;
+	margin-bottom: 5%;
 	font-family: var(--heading-font);
 }
 .navigation ul{
@@ -10,12 +11,17 @@ nav {
 	list-style: none;
 	padding: 0;
 }
-.navigation .togglableLinks li a {
-	background-color: var(--primary-color);
-}
 .navigation .togglableLinks li a:hover {
+	background-color: var(--secondary-color);
+}
+.navigation .togglableLinks li a{
 	background-color: var(--accent1-color);
 	color: var(--accent2-color);
+	border-top: 1px solid var(--secondary-color);
+
+}
+.navigation .togglableLinks li:last-child a{
+	border-bottom: 1px solid var(--secondary-color);
 }
 .header {
 	display: grid;
@@ -24,6 +30,7 @@ nav {
 	background-color: var(--secondary-color);
 	text-align: center;
 	padding: 10px;
+	padding-bottom: 0;
 	color: var( --accent2-color);
 	vertical-align: middle;
 }
@@ -55,7 +62,7 @@ nav {
 }
 
 .header .ham {
-	margin-top: 18px;
+	margin-top: 12px;
 	grid-row: 1/2;
 	grid-column: 4/5;
 	text-align: right;
@@ -67,6 +74,10 @@ nav {
 .header .today {
 	grid-row: 2/3;
 	grid-column: 1/5;
+	background-color: var(--primary-color);
+	margin: 0 -10px 0 -10px;
+	padding: 10px 10px;
+	font-size: 1.3em;
 }
 
 .header ul {
@@ -110,6 +121,9 @@ nav {
 
 /* Media Query for large views */
 @media only screen and (min-width: 65em) {
+	nav {
+		position: static;
+	}
 	.header {
 		grid-template-columns: 50px 2fr 5fr 1fr;
 		grid-template-rows: 1fr 0fr;

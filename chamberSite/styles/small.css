@@ -10,3 +10,7 @@
 	--heading-font: 'Josefin Slab', serif;
     --paragraph-font: 'Inter Tight', sans-serif;
 }
+
+body {
+    overflow: visible;
+}
