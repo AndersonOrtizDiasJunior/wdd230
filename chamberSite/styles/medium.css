@@ -1,0 +1,81 @@
+@media only screen and (min-width:  32.5em) {
+	#footerLogo {
+		display: flex;
+		flex-direction: row;
+	}
+    #footerLogo img {
+        margin-left: 0;
+    }
+    #footerLogo p {
+        padding-top: 50px;
+    }
+    #footerMap {
+        padding-top: 50px;
+        font-size: 1.1em;
+        text-align: right;
+        margin-right: 10%;
+        margin-left: auto;
+    }
+    .companyData {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+    }
+
+    #hero p {
+        font-size: 5em;
+        width: 100%;
+        top: 20%;
+    }
+
+    #hero .button {
+        font-size: 2em;
+        width: 180px;
+        left: calc(50% - 90px);
+    }
+
+    #spotlight {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #spotlight a img{
+        margin: 0 2% 0 2%;
+        width: 96%;
+    }
+
+    #event-weather {
+        display: flex;
+        width: 100%;
+    }
+
+    #weather {
+        padding-right: 20px;
+        margin-left: 0;
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    #event{
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    #temperature {
+        font-size: 4em;
+    }
+    #sky {
+        font-size: 3em;
+    }
+    #event a img {
+        min-width: 322px;
+    }
+    #join {
+        display: block;
+        text-align: center;
+        margin: 10% 0 10% 0;
+    }
+
+    /* #join .button {
+        padding-left: 2%;
+        padding-right: 2%;
+    } */
+}

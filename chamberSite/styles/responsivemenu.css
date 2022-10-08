@@ -1,10 +1,14 @@
-/* Small/Phone View ***************/
+/* Small/Phone View/Medium ***************/
+main {
+	padding-top: 250px;
+}
 nav {
+	z-index: 10;
 	margin: 0 auto;
 	width: 100%;
 	position: fixed;
-	margin-bottom: 5%;
 	font-family: var(--heading-font);
+	overflow: hidden;
 }
 .navigation ul{
 	margin: 0;
@@ -118,9 +122,21 @@ nav {
 .responsive a.ham::before {
 	content: "ⓧ";
 }
-
+@media only screen and (min-width: 270px) {
+	main {
+		 padding-top: 200px;
+	}
+}
+@media only screen and (min-width: 390px) {
+	main {
+		 padding-top: 150px;
+	}
+}
 /* Media Query for large views */
 @media only screen and (min-width: 65em) {
+	main {
+		padding-top: 0;
+	}
 	nav {
 		position: static;
 	}
