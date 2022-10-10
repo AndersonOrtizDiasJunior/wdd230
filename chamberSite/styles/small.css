@@ -43,10 +43,22 @@ h3 {
 	padding: 5px;
 }
 
-a h3:hover {
-    background-color: var(--primary-color);
+.meetingCall {
+   display: none;
+   padding: 10px;
+   z-index: 10;
+   height: 5%;
+   font-family:var(--paragraph-font);
+   background-color: var(--accent1-color);
+   width: 100%;
+   text-align: center;
 }
 
+.meetingCall a {
+   text-align: center;
+   color: white;
+   text-decoration: none;
+}
 footer {
     text-align: center;
     background-color: var(--secondary-color);
@@ -141,9 +153,16 @@ footer {
     text-align: center;
  }
 
+ #news div {
+   padding: 5px;
+ }
+
  #news a{
     text-decoration: none;
     color: black;
+ }
+ #news div:hover {
+   background-color: var(--primary-color);
  }
  .ad .third {
    display: none;
