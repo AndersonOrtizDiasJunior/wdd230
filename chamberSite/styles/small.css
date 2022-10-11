@@ -164,7 +164,7 @@ footer {
  #news div:hover {
    background-color: var(--primary-color);
  }
- .ad .third {
+ .third {
    display: none;
  }
 
