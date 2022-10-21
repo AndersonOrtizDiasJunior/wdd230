@@ -15,7 +15,14 @@ function weekDay() {
 const hambutton = document.querySelector('.ham');
 const mainnav = document.querySelector('.navigation')
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => {
+    mainnav.classList.toggle('responsive')
+    if (hambutton.textContent == "=") {
+        hambutton.textContent = "ⓧ"
+    } else {
+        hambutton.textContent = "="
+    }
+}, false);
 
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
 

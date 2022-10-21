@@ -104,9 +104,6 @@ nav {
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-.ham::before {
-	content: "=";
-}
 
 /* .navigation a:hover {
 	color: white;
@@ -120,9 +117,6 @@ nav {
 	display: block;
 }
 
-.responsive a.ham::before {
-	content: "ⓧ";
-}
 @media only screen and (min-width: 270px) {
 	main {
 		 padding-top: 200px;
