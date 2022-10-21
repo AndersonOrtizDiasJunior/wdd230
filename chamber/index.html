@@ -56,7 +56,11 @@
     </header>
     <main>
         <div id="hero">
-            <img src="images/hero-image.png" alt="hero logo" width="500" height="250">
+            <picture>
+                <source srcset="images/hero-imageX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                <source srcset="images/hero-imageX3.png" media="(min-width: 65em)">
+                <img src="images/hero-image.png" alt="hero logo">
+            </picture>
             <p>Small town<br>Big business</p>
             <a class="button">Join us</a>
         </div>
@@ -85,13 +89,25 @@
             <h2>Spotlight</h2>
             <div> 
                 <a class="ad" href="">
-                    <img src="images/ad1.png" width="250" height="250" alt="Basil's library ad">
+                    <picture>
+                        <source srcset="images/ad1X2.png" media="(min-width: 32.5em) and (max-width: 64.99em) and (max-width: 64.99em)">
+                        <source srcset="images/ad1X3.png" media="(min-width: 65em)">
+                        <img src="images/ad1.png" width="250" height="250" alt="Basil's library ad">
+                    </picture>
                 </a>
                 <a class="ad" href="">
-                    <img src="images/ad2.png" width="250" height="250" alt="Saibara's tools ad">
+                    <picture>
+                        <source srcset="images/ad2X2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                        <source srcset="images/ad2X3.png" media="(min-width: 65em)">
+                        <img src="images/ad2.png" width="250" height="250" alt="Saibara's tools ad">
+                    </picture>
                 </a>
                 <a class="ad third" href="">
-                    <img src="images/ad3.png" width="250" height="250" alt="Poutry farm ad">
+                    <picture>
+                        <source srcset="images/ad3X2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                        <source srcset="images/ad3X3.png" media="(min-width: 65em)">
+                        <img src="images/ad3.png" width="250" height="250" alt="Poutry farm ad">
+                    </picture>
                 </a>
             </div>
         </div>
@@ -105,12 +121,20 @@
             <div class="event">
                 <h2>Event</h2>
                 <a href="">
-                    <img src="images/event.png" alt="cooking festival image" width="500" height="250">
+                    <picture>
+                        <source srcset="images/eventX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                        <source srcset="images/eventX3.png" media="(min-width: 65em)">
+                        <img src="images/event.png" alt="cooking festival image">
+                    </picture>
                 </a>
             </div>
             <div class="weather">
                 <h2>Today's Weather</h2>
-                <img src="images/partly_cloudy.png" alt="cloudy weather icon" width="80" height="80">
+                <picture>
+                    <source srcset="images/partly_cloudyX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                    <source srcset="images/partly_cloudyX3.png" media="(min-width: 65em)">
+                    <img src="images/partly_cloudy.png" alt="cloudy weather icon">
+                </picture>
                 <br>
                 <span id="temperature"><span id="temperatureValue">50</span>°f</span>
                 <br>
@@ -125,12 +149,20 @@
         <div class="event largeOnly">
             <h2>Event</h2>
             <a href="">
-                <img src="images/event.png" alt="cooking festival image" width="500" height="250">
+                <picture>
+                    <source srcset="images/eventX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                    <source srcset="images/eventX3.png" media="(min-width: 65em)">
+                    <img src="images/event.png" alt="cooking festival image">
+                </picture>
             </a>
         </div>
         <div class="weather largeOnly" >
             <h2>Today's Weather</h2>
-            <img src="images/partly_cloudy.png" alt="cloudy weather icon" width="80" height="80">
+            <picture>
+                <source srcset="images/partly_cloudyX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                <source srcset="images/partly_cloudyX3.png" media="(min-width: 65em)">
+                <img src="images/partly_cloudy.png" alt="cloudy weather icon">
+            </picture>
             <br>
             <span id="temperature"><span id="temperatureValueLarge">50</span>°f</span>
             <br>
@@ -145,7 +177,11 @@
     <footer>
         <div class="companyData">
             <div id="footerLogo">
-                <img src="images/mineraltownfulllogo.png" alt="mineral town logo" width="150" height="150">
+                <picture>
+                    <source srcset="images/mineraltownfulllogoX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                    <source srcset="images/mineraltownfulllogoX3.png" media="(min-width: 65em)">
+                    <img src="images/mineraltownfulllogo.png" alt="mineral town logo">
+                </picture>
                 <p>
                     <b>Friends Of Mineral Town <br>
                     Chamber of Commerce</b>
