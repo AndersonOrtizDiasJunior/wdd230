@@ -19,10 +19,11 @@ nav {
 	background-color: var(--secondary-color);
 }
 .navigation .togglableLinks li a{
-	background-color: var(--accent1-color);
+	background-color: var(--primary-color);
 	color: var(--accent2-color);
 	border-top: 1px solid var(--secondary-color);
-
+	font-size: 1.5em;
+	text-align: center;
 }
 .navigation .togglableLinks li:last-child a{
 	border-bottom: 1px solid var(--secondary-color);
