@@ -10,10 +10,11 @@
 	--heading-font: 'Josefin Slab', serif;
     --paragraph-font: 'Inter Tight', sans-serif;
 }
-
-body {
-   width: 100%;
+html, body {
+   max-width: 100%;
+   overflow-x: hidden;
 }
+
 p {
     font-family: var(--paragraph-font);
 }
@@ -175,7 +176,7 @@ footer {
     display: flex;
     flex-direction: column;
  }
- #spotlight a img,  #event a img {
+ #spotlight a img,  .event a img {
     width: 100%;
     height: auto;
  }
@@ -183,12 +184,15 @@ footer {
     display: none;
  }
 
- #event, #weather{
-    margin-left: 5%;
+ .event, .weather{
+    padding-left: 5%;
+    padding-right: 5%;
     margin-right: 5%;
  }
-
- #weather{
+.event a {
+   width: 100%;
+}
+ .weather{
     margin-bottom: 5%;
     text-align: center
  }
@@ -198,3 +202,6 @@ footer {
     font-family: var(--paragraph-font);
  }
 
+ .largeOnly {
+   display: none;
+ }
