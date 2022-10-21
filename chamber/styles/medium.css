@@ -31,10 +31,10 @@
     #hero .button {
         font-size: 2em;
         width: 180px;
-        left: calc(50% - 90px);
+        left: calc(50% - 118px);
     }
 
-    #spotlight {
+    #spotlight div {
         display: flex;
         flex-direction: row;
     }
@@ -55,7 +55,7 @@
         grid-column: 2/3;
         grid-row: 1;
     }
-    #event{
+    .event{
         grid-column: 1/2;
         grid-row: 1;
     }
@@ -64,9 +64,6 @@
     }
     #sky {
         font-size: 3em;
-    }
-    #event a img {
-        min-width: 322px;
     }
     #join {
         display: block;

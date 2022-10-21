@@ -83,15 +83,17 @@
         </div>
         <div id="spotlight">
             <h2>Spotlight</h2>
-            <a class="ad" href="">
-                <img src="images/ad1.png" width="250" height="250" alt="Basil's library ad">
-            </a>
-            <a class="ad" href="">
-                <img src="images/ad2.png" width="250" height="250" alt="Saibara's tools ad">
-            </a>
-            <a class="ad third" href="">
-                <img src="images/ad3.png" width="250" height="250" alt="Poutry farm ad">
-            </a>
+            <div> 
+                <a class="ad" href="">
+                    <img src="images/ad1.png" width="250" height="250" alt="Basil's library ad">
+                </a>
+                <a class="ad" href="">
+                    <img src="images/ad2.png" width="250" height="250" alt="Saibara's tools ad">
+                </a>
+                <a class="ad third" href="">
+                    <img src="images/ad3.png" width="250" height="250" alt="Poutry farm ad">
+                </a>
+            </div>
         </div>
         <div id="join">
             <h2>Know the guild</h2>
@@ -100,22 +102,44 @@
             <a class="button">Join Us</a>
         </div>
         <div id="event-weather">
-            <div id="event">
+            <div class="event">
                 <h2>Event</h2>
                 <a href="">
                     <img src="images/event.png" alt="cooking festival image" width="500" height="250">
                 </a>
             </div>
-            <div id="weather">
+            <div class="weather">
                 <h2>Today's Weather</h2>
                 <img src="images/partly_cloudy.png" alt="cloudy weather icon" width="80" height="80">
                 <br>
-                <span id="temperature">70°f</span>
+                <span id="temperature"><span id="temperatureValue">50</span>°f</span>
                 <br>
                 <span id="sky"></span>Partly Cloudy
                 <br>    
                 <span id="temperatures">Day 76° • Night 64°</span>
+                <br>
+                WindSpeed: <span id="windSpeed">2</span>mph<br>
+                WindChill: <span id="windChill">N/A</span>
             </div>
+        </div>
+        <div class="event largeOnly">
+            <h2>Event</h2>
+            <a href="">
+                <img src="images/event.png" alt="cooking festival image" width="500" height="250">
+            </a>
+        </div>
+        <div class="weather largeOnly" >
+            <h2>Today's Weather</h2>
+            <img src="images/partly_cloudy.png" alt="cloudy weather icon" width="80" height="80">
+            <br>
+            <span id="temperature"><span id="temperatureValueLarge">50</span>°f</span>
+            <br>
+            <span id="sky"></span>Partly Cloudy
+            <br>    
+            <span id="temperatures">Day 76° • Night 64°</span>
+            <br>
+            WindSpeed: <span id="windSpeedLarge">3.01</span>mph<br>
+            WindChill: <span id="windChillLarge">N/A</span>
         </div>
     </main>
     <footer>
@@ -147,5 +171,6 @@
     </footer>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dateupdate.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
