@@ -139,7 +139,6 @@ footer {
 
  .button {
     background-color: var(--accent1-color);
-    font-family: var(--heading-font);
     color: var(--secondary-color);
     border-radius: 10px;
     padding: 20px;

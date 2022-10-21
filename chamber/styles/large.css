@@ -41,7 +41,7 @@
         grid-row: 1/4; 
         grid-column: 3/4;
         flex-direction: column;
-        height: 100%;
+
     }
 
     #spotlight div {
