@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discover</title>
+    <meta name="description" content="Discover page for chamber of commer Friends of mineral Town">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -12,7 +13,132 @@
     <link rel="stylesheet" href="styles/responsivemenu.css">
 </head>
 <body>
-    <header><responsive-menu></responsive-menu></header>
+    <header>
+        <nav class="navigation">
+            <div class="meetingCall">
+                <a href="https://zoom.us/">
+                    🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+                </a>
+            </div>
+            <div class="header">                      
+            <img class="navLogo" src="images/mineraltownsmalllogo.png" width="50" height="50" alt="chamber logo">
+            <a class="name" href="index.html">
+                <span class="chamberName">Friends of Mineral Town</span>
+                <br>
+                Chamber of commerce
+            </a>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook-logo.png" width="20" height="20" alt="facebook logo">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin-logo.png" width="20" height="20" alt="linkedin logo">
+                </a>
+            </div>
+            <a class="ham" href="#">=</a>
+            <span class="today">Error loading date</span>
+        </div>
+            <ul class="togglableLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="mainContainer">
+            <h1>Discover</h1>
+            <br>
+            <div class="cityInfo">
+                <h2>An expanding city</h2>
+                <div class="content">
+                    <picture>
+                    <img class="textIMG" src="images/placeholder.webp" data-src="images/expanding.webp" >
+                </picture>
+                <p>Beside its small size, the city of Mineral Town has grown 150% in the last year!</p></div>
+            </div>
+            <br>
+            <div  class="cityInfo">
+                <h2>Tourism</h2>
+                <div class="content"><picture>
+                    <img class="textIMG" src="images/placeholder.webp" data-src="images/mountains.jpeg" >
+                </picture>
+                <p>Mineral Town is known for its beatiful mountains and hills, the most famous of the, Mother's Hill, receives visitors from all around the globe!</p></div>
+            </div>
+            <br>
+            <div  class="cityInfo">
+                <h2>Strong agro industry</h2>
+                <div class="content"><picture>
+                    <img class="textIMG" src="images/placeholder.webp" data-src="images/farm.jpeg" >
+                </picture>
+                <p>Mineral Town is known for its string agro culture, not only big meat corporations install themselfs here, but also a lot of independant farmers too!</p></div>
+            </div>
+            <br>
+            <div  class="cityInfo">
+                <h2>Strong Jewelery industry</h2>
+                <div class="content"><picture>
+                    <img class="textIMG" src="images/placeholder.webp" data-src="images/jewels.webp" >
+                </picture>
+                <p>Because of the Lake's Mine, Mineral Town has a huge variety of jewels and ores, giving place to a huge jewelery industry.</p></div>
+            </div>
+            <br>
+
+            <div  class="cityInfo">
+                <h2>Events</h2>
+                <div class="content"><picture>
+                    <img class="textIMG" src="images/placeholder.webp" data-src="images/horseRacing.webp" >
+                </picture>
+                <p>Mineral Town has a lot of fun events like horse races, cooking festivals and more!</p></div>
+            </div>
+            <br>
+        </div>
+        <div class="centered">
+            <br>
+            You last visited this page <h3 id="daysBetweenLast">0 days ago</h3> 
+        </div>
+    </main>
+    <footer>
+        <div class="companyData">
+            <div id="footerLogo">
+                <picture>
+                    <source srcset="images/mineraltownfulllogoX2.png" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                    <source srcset="images/mineraltownfulllogoX3.png" media="(min-width: 65em)">
+                    <img src="images/mineraltownfulllogo.png" alt="mineral town logo">
+                </picture>
+                <p>
+                    <b>Friends Of Mineral Town <br>
+                    Chamber of Commerce</b>
+                    <br>
+                    Praça JK, S/No, <br>
+                    Unaí - MG, 38610-000</p>
+            </div>
+            <div id="footerMap">
+                friendsofmineraltown@commerce.org
+                <br>
+                +55 19 4002 8922
+                <br>
+                <a href="https://www.google.com/maps/place/Prefeitura+Municipal+de+Una%C3%AD/@-16.3610678,-46.9108667,16z/data=!4m9!1m2!2m1!1sprefeitura+unai!3m5!1s0x9356ed83e53a0b9d:0x19fa94c2c255180a!8m2!3d-16.3610999!4d-46.9021828!15sCg9wcmVmZWl0dXJhIHVuYWmSARRjaXR5X2Rpc3RyaWN0X29mZmljZeABAA">
+                    📌 map pin</a>
+                <br>
+
+            </div>
+        </div>
+        <div class="footerData">
+            <span id="year"></span>
+            <span id="lastModfied">Error loading date</span>
+        </div>
+    </footer>
     <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dateupdate.js"></script>
+    <script src="scripts/lazyLoader.js"></script>
+    <script src="scripts/lastVisit.js"></script>
 </body>
 </html>

@@ -213,3 +213,28 @@ footer {
  .largeOnly {
    display: none;
  }
+
+ #mainContainer {
+   width: 80%;
+   margin-left: 10%;
+   margin-right: auto;
+   text-align: center;
+ }
+
+ .cityInfo .textIMG {
+   width: 70%;
+   filter: blur(0em);
+   transition: filter 0.5s;
+ }
+
+ .textIMG[data-src] {
+   filter: blur(0.2em);
+ }
+
+ .cityInfo .content p{
+   text-align: center;
+ }
+ 
+.centered{
+   text-align: center;
+}
