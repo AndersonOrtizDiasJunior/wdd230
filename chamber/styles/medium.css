@@ -59,10 +59,10 @@
         grid-column: 1/2;
         grid-row: 1;
     }
-    #temperature {
+    .temperature {
         font-size: 4em;
     }
-    #sky {
+    .sky {
         font-size: 3em;
     }
     #join {

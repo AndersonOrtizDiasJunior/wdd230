@@ -17,7 +17,7 @@
         grid-column: 1/2;
     }
 
-    #temperature {
+    .temperature {
         font-size: 6em;
     }
 
