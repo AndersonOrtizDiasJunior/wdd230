@@ -1,0 +1,24 @@
+table {
+    border: 3px solid black;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+
+th {
+     color: white;
+}
+
+.header {
+    background-color: crimson;
+    padding: 0;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(236, 166, 180);
+}
+
+tr:not(.header):hover {
+    background-color: rgb(93, 36, 48);
+    color: white;
+}
