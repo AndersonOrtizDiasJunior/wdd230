@@ -11,14 +11,7 @@ if (lastVisit == null) {
 
 
 function updateDaysH3(days) {
-    var differenceString = ""
-    if (days == 0) {
-        differenceString = "today"
-    } else if (days == 01) {
-        differenceString = "yesterday"
-    } else {
-        differenceString = `${days} days ago`
-    }
+    var differenceString = `${days} days ago`
     var daysH3 = document.querySelector("#daysBetweenLast")
     daysH3.textContent = differenceString
     localStorage.setItem("lastVisit", currentDate)
