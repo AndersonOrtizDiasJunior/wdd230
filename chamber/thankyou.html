@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Join page for chamber of commer Friends of mineral Town">
+    <meta name="description" content="thank you page for chamber of commer Friends of mineral Town">
     <title>Join us</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
@@ -54,28 +54,17 @@
         </nav>
     </header>
     <main class="mainContainer">
-        <section>
-            <div class="form" >
-                <form action="thankyou.html">
-                    <label for="fname"      >First Name             </label><input type="text"      name="fname"    id="fname"      required><br>
-                    <label for="lname"      >Last Name              </label><input type="text"      name="lname"    id="lname"      required><br>
-                    <label for="business"   >Company                </label><input type="text"      name="business" id="business"   required><br>
-                    <label for="title"      >Position/Title         </label><input type="text"      name="title"    id="title"      pattern="[a-zA-Z0-9 \-].{7,}"><br>
-                    <label for="desc"       >Business Description   </label><br><textarea               name="desc"     id="desc"       rows="4"></textarea><br>
-                    <label for="email"      >E-mail                  </label><input type="email"     name="email"    id="email"      placeholder="example@email.com"><br>
-                    <label for="cell"       >Phone Number                   </label><input type="tel"       name="cell"     id="cell"       required><br>
-                    <label for="type">Membership level </label>
-                    <select name="type" id="type">
-                        <option value="np">1. Non-Profit</option>
-                        <option value="b">2. Bronze</option>
-                        <option value="s">3. Silver</option>
-                        <option value="g">4. Gold</option>
-                    </select>
-                    <input type="hidden" name="time" id="time">
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-        </section>
+        <h2 class="firstElement">
+            Thank you for joining us!
+        </h2>
+        <div class="centered">
+            <p>You are now part of biggest Commerce chamber in Mineral Town!</p>
+            <picture>
+                <source srcset="images/mineraltownfulllogoX2.webp" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                <source srcset="images/mineraltownfulllogoX3.webp" media="(min-width: 65em)">
+                <img src="images/mineraltownfulllogo.webp" alt="mineral town logo">
+            </picture>
+        </div>
     </main>
     <footer>
         <div class="companyData">

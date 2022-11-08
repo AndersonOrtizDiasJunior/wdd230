@@ -6,6 +6,7 @@
     --secondary-color: #003153 ;
     --accent1-color: #5EBE8C;
     --accent2-color: white;
+    --accent3-color: #CCB15D;
 
 	--heading-font: 'Josefin Slab', serif;
     --paragraph-font: 'Inter Tight', sans-serif;
@@ -237,4 +238,42 @@ footer {
  
 .centered{
    text-align: center;
+}
+
+.firstElement {
+   margin-top: 150px;
+}
+.form {
+   width: 80%;
+   margin: 100px 10% 20px 10%;
+   padding: 15px;
+   background-color: var(--accent1-color);
+   box-sizing: border-box;
+   border-radius: 15px;
+   font-family: var(--paragraph-font);
+   font-size: 1.3em;
+}
+
+.form input, textarea, select {
+   width: 100%;
+   box-sizing: border-box;
+   border-radius: 10px;
+   border: none;
+   padding: 5px;
+   margin-bottom: 5px;
+}
+
+.form button {
+   border: none;
+   font-family: var(--heading-font);
+   background-color: var(--secondary-color);
+   color: var(--accent2-color);
+   font-size: 1.4em;
+   padding: 5px;
+   margin: 0;
+   border-radius: 15px;
+}
+
+.form button:hover {
+   background-color: var(--accent3-color);
 }

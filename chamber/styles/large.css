@@ -79,4 +79,12 @@
     .largeOnly{
         display: block;
       }
+
+      .form {
+        margin: 20px 10% 20px 10%;
+      }
+
+      .firstElement {
+        margin-top: 20px;
+      }
 }
