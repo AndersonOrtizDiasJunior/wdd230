@@ -205,6 +205,9 @@ footer {
     margin-bottom: 5%;
     text-align: center
  }
+ .weatherIcon {
+   width: 30%;
+ }
 
  .temperature {
     font-size: 3em;
