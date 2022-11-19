@@ -280,3 +280,70 @@ footer {
 .form button:hover {
    background-color: var(--accent3-color);
 }
+
+.company {
+   width: 80%;
+   margin: 0 10% 25px 10%;
+   background-color: var( --accent1-color);
+   color: var(--accent2-color);
+   padding: 15px;
+   font-size: 1.2em;
+   border-radius: 5px;
+}
+
+
+
+.company .site {
+   font-size: 1.2em;
+}
+.company img {
+   width: 80%;
+   margin-left: 10%;
+   margin-right: auto;
+}
+
+.company .label {
+   font-size: 1.1em;
+   color: var(--secondary-color);
+}
+
+.search {
+   display: flex;
+   width: 80%;
+   margin-left: 10%;
+   margin-right: auto;
+   margin-bottom: 5%;
+   font-size: 1.2em;
+   color: var(--secondary-color);
+   vertical-align: middle;
+}
+.search .categoryContainer {
+   display: flex;
+   width: 40%;
+}
+.search .textSearchContainer {
+   display: flex;
+   width: 60%;
+}
+.textSearchContainer button {
+   margin-right: 10px;
+   background-color: var(--secondary-color);
+   border: none;
+   padding: 5px;
+   color: var(--accent2-color);
+   border-radius: 15px;
+}
+.textSearchContainer button:hover {
+   background-color: var(--accent3-color);
+   color: var(--accent2-color);
+}
+.search input {
+   width: 100%;
+   margin-right: 10px;
+   height: auto;
+   box-sizing: border-box;
+   border-radius: 10px;
+   border: none;
+   padding: 5px;
+   margin-bottom: 5px;
+}
