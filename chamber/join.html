@@ -66,12 +66,19 @@
                         <label for="email"      >E-mail                  </label><input type="email"     name="email"    id="email"      placeholder="example@email.com"><br>
                         <label for="cell"       >Phone Number                   </label><input type="tel"       name="cell"     id="cell"       required><br>
                         <label for="type">Membership level </label>
+                        <br>
                         <select name="type" id="type">
                             <option value="np">1. Non-Profit</option>
                             <option value="b">2. Bronze</option>
                             <option value="s">3. Silver</option>
                             <option value="g">4. Gold</option>
                         </select>
+                        <div id="membershipInfo">
+                        <img id="membershipImage" src="images/np.webp"><br>
+                        <span id="membershipName">Non-profit</span><br>
+                        <span id="membershipPrice">Free</span><br>
+                        <span id="membershipDescription">Exclusive level for Non-profit organizations, grants all the basic benefits and attend specific needs with no fee.</span><br>
+                        </div>
                         <input type="hidden" name="time" id="time">
                         <button type="submit">Submit</button>
                     </form>
@@ -113,5 +120,6 @@
     </footer>
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dateupdate.js"></script>
+    <script src="scripts/membershipInfo.js"></script>
 </body>
 </html>

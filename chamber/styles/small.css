@@ -266,6 +266,10 @@ footer {
    margin-bottom: 5px;
 }
 
+#membershipImage {
+   width: 26%;
+   min-width: 30px;
+}
 .form button {
    border: none;
    font-family: var(--heading-font);
@@ -346,4 +350,17 @@ footer {
    border: none;
    padding: 5px;
    margin-bottom: 5px;
+}
+
+#membershipInfo {
+   text-align: center;
+   margin-bottom: 60px;
+}
+
+#membershipName {
+   font-size: 1.8em;
+}
+
+#membershipPrice {
+   font-size: 1.4em;
 }
