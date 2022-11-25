@@ -4,16 +4,125 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory</title>
+    <meta name="description" content="Contact page for chamber of commer Friends of mineral Town">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <title>Contact</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/responsivemenu.css">
+    <link rel="stylesheet" href="styles/snackbar.css">
 </head>
 <body>
-    <header><responsive-menu></responsive-menu></header>
+    <header>
+        <nav class="navigation">
+            <div class="meetingCall">
+                <a href="https://zoom.us/">
+                    🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+                </a>
+            </div>
+            <div class="header">                      
+            <img class="navLogo" src="images/mineraltownsmalllogo.webp" width="50" height="50" alt="chamber logo">
+            <a class="name" href="index.html">
+                <span class="chamberName">Friends of Mineral Town</span>
+                <br>
+                Chamber of commerce
+            </a>
+            <ul>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/">
+                    <img src="images/facebook-logo.webp" width="20" height="20" alt="facebook logo">
+                </a>
+                <a href="https://www.linkedin.com/">
+                    <img src="images/linkedin-logo.webp" width="20" height="20" alt="linkedin logo">
+                </a>
+            </div>
+            <a class="ham" href="#">=</a>
+            <span class="today">Error loading date</span>
+        </div>
+            <ul class="togglableLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="centered">Contact us</h1>
+        <section id="contactUsSection">
+            <div class="contact halfOnBigger">
+                <h2>Contact</h2>
+                <picture>
+                    <source srcset="images/hero-imageX2.webp" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                    <source srcset="images/hero-imageX3.webp" media="(min-width: 65em)">
+                    <img src="images/hero-image.webp" alt="Contact us">
+                </picture>
+                friendsofmineraltown@commerce.org
+                <br>
+                +55 19 4002 8922
+                <br>
+                <a href="https://www.google.com/maps/place/Prefeitura+Municipal+de+Una%C3%AD/@-16.3610678,-46.9108667,16z/data=!4m9!1m2!2m1!1sprefeitura+unai!3m5!1s0x9356ed83e53a0b9d:0x19fa94c2c255180a!8m2!3d-16.3610999!4d-46.9021828!15sCg9wcmVmZWl0dXJhIHVuYWmSARRjaXR5X2Rpc3RyaWN0X29mZmljZeABAA">
+                    📌 map pin</a>
+                <br>
+                Praça JK, S/No, <br>
+                    Unaí - MG, 38610-000</p>
+            </div>
+            <div class="form halfOnBigger" >
+                <form method="get" action="">
+                    <div>
+                        <label for="fname"      >Full Name             </label><input type="text"      name="fname"    id="fname"      required><br>
+                        <label for="business"   >Company (optional)                </label><input type="text"      name="business" id="business"><br>
+                        <label for="email"      >E-mail                  </label><input type="email"     name="email"    id="email"      placeholder="example@email.com" required><br>
+                        <label for="cell"       >Phone Number (optional)                     </label><input type="tel"       name="cell"     id="cell"><br>
+                        <label for="desc"       >Message   </label><br><textarea               name="desc"     id="desc"       rows="4" required></textarea><br>
+                        <input type="hidden" name="time" id="time">
+                    </div>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="companyData">
+            <div id="footerLogo">
+                <picture>
+                    <source srcset="images/mineraltownfulllogoX2.webp" media="(min-width: 32.5em) and (max-width: 64.99em)">
+                    <source srcset="images/mineraltownfulllogoX3.webp" media="(min-width: 65em)">
+                    <img src="images/mineraltownfulllogo.webp" alt="mineral town logo">
+                </picture>
+                <p>
+                    <b>Friends Of Mineral Town <br>
+                    Chamber of Commerce</b>
+                    <br>
+                    Praça JK, S/No, <br>
+                    Unaí - MG, 38610-000</p>
+            </div>
+            <div id="footerMap">
+                friendsofmineraltown@commerce.org
+                <br>
+                +55 19 4002 8922
+                <br>
+                <a href="https://www.google.com/maps/place/Prefeitura+Municipal+de+Una%C3%AD/@-16.3610678,-46.9108667,16z/data=!4m9!1m2!2m1!1sprefeitura+unai!3m5!1s0x9356ed83e53a0b9d:0x19fa94c2c255180a!8m2!3d-16.3610999!4d-46.9021828!15sCg9wcmVmZWl0dXJhIHVuYWmSARRjaXR5X2Rpc3RyaWN0X29mZmljZeABAA">
+                    📌 map pin</a>
+                <br>
+
+            </div>
+        </div>
+        <div class="footerData">
+            <span id="year"></span>
+            <span id="lastModfied">Error loading date</span>
+        </div>
+    </footer>
     <script src="scripts/responsive-menu.js"></script>
+    <script src="scripts/dateupdate.js"></script>
 </body>
 </html>

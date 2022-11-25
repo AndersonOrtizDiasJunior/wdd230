@@ -135,4 +135,29 @@
      #textSearchContainerLabel {
         display: none;
      }
+     .halfOnBigger  {
+        width: 50%;
+     }
+
+     #contactUsSection {
+        flex-direction: row;
+        padding: 0;
+     }
+
+     #contactUsSection  .form{
+        text-align: center;
+        margin:0 2.5% 0 2.5%;
+        height: auto;
+     }
+     #contactUsSection  .form form div {
+        text-align: left;
+     }
+     #contactUsSection  .form form {
+        font-size: 1.3em;
+     }
+     #contactUsSection .contact {
+        margin:0;
+        height: 100%;
+        border-radius: 0;
+     }
 }
