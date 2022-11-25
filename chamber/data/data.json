@@ -2,13 +2,13 @@
     "companies" : [
         {
             "name":"Saibara's tools",
-            "logoURL":"https://images-workbench.99static.com/qIsq8atRMj0pb_yNCufjmyDtWvo=/99designs-contests-attachments/114/114417/attachment_114417266",
+            "logoURL":"https://img.freepik.com/premium-vector/blacksmith-vector-icon-anvil-hammer-forge-craftmanship-blacksmith-black-metal-steel_548264-452.jpg",
             "website":"https://www.google.com/search?hl=pt-BR&q=saibara+tools&spell=1&sa=X&ved=2ahUKEwjnvoTFtLj7AhV1qpUCHVo9Ad4QBSgAegQIMBAB&biw=1728&bih=880&dpr=2",
             "membership":"Gold",
             "phone":"+11234567896",
             "addres":"Plaza st. n1",
             "categories":["Smith","Tools"],
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, neque a laoreet tempor, lacus sapien sagittis quam, a finibus lectus eros sodales mi. Proin accumsan eros sit amet nunc gravida tempus. Nam in turpis ac nisi mattis sodales. Curabitur a nisl arcu. Suspendisse in feugiat mauris. Maecenas fermentum neque sem, mollis facilisis diam condimentum sed. Maecenas porttitor, dolor quis euismod molestie, justo arcu efficitur neque, in tempor nulla urna in massa. In at fringilla turpis, vel consequat metus. Aliquam venenatis elit a dui consectetur commodo. Nulla nec tellus vel risus lacinia suscipit. Donec posuere dui sit amet sapien elementum, a laoreet lectus tincidunt. Pellentesque luctus eros ut urna vulputate, id tempus augue placerat. Integer lobortis lacinia dui. Nulla accumsan ex et interdum volutpat. Nunc a sem vitae odio tempor sodales. Praesent non lectus tellus."
+            "description":"The best tools in the city, we offer tools upgrade and special customized tools too!"
         },
         {
             "name":"Poutry Farm",
@@ -71,7 +71,7 @@
             "phone":"+1595856789",
             "addres":"Snack st. n2",
             "categories":["Food","Rooms","Hotel","Drinks"],
-            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam malesuada, neque a laoreet tempor, lacus sapien sagittis quam, a finibus lectus eros sodales mi. Proin accumsan eros sit amet nunc gravida tempus. Nam in turpis ac nisi mattis sodales. Curabitur a nisl arcu. Suspendisse in feugiat mauris. Maecenas fermentum neque sem, mollis facilisis diam condimentum sed. Maecenas porttitor, dolor quis euismod molestie, justo arcu efficitur neque, in tempor nulla urna in massa. In at fringilla turpis, vel consequat metus. Aliquam venenatis elit a dui consectetur commodo. Nulla nec tellus vel risus lacinia suscipit. Donec posuere dui sit amet sapien elementum, a laoreet lectus tincidunt. Pellentesque luctus eros ut urna vulputate, id tempus augue placerat. Integer lobortis lacinia dui. Nulla accumsan ex et interdum volutpat. Nunc a sem vitae odio tempor sodales. Praesent non lectus tellus."
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
         },
         {
             "name":"Yodel Ranch",

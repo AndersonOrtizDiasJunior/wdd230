@@ -285,27 +285,99 @@ footer {
    background-color: var(--accent3-color);
 }
 
-.company {
-   width: 80%;
-   margin: 0 10% 25px 10%;
+#companyList{
+   width: 100%;
+   padding: 15px;
    background-color: var( --accent1-color);
    color: var(--accent2-color);
-   padding: 15px;
-   font-size: 1.2em;
-   border-radius: 5px;
+   margin-bottom: 5px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 0fr;
+   align-items: center;
+}
+#companyList .site {
+   font-family: var(--paragraph-font);
+}
+#companyList p {
+   margin-block-start: 0;
+   margin-block-end: 0;
+   text-align: center;
+}
+#companyList #companySite {
+   grid-column: 3/4;
+   grid-row: 1/2;
+   text-align: center;
+   font-size: 1.3em;
+}
+#companyList img {
+   height:  50px;
+   width: auto;
+   margin:auto;
+   display: none;
+   border-radius: 50%;
+}
+#companyList #companyName {
+   grid-column: 1/2;
+   grid-row: 1/2;
+   text-align: center;
+   font-size: 1.5em;
+   font-family: var(--heading-font);
+}
+#companyList #companyMembership {
+ display: none;
+}
+#companyList #companyAddress {
+  display: none;
+}
+#companyList #companyPhone {
+   grid-column: 2/3;
+   grid-row: 1/2;
+}
+#companyList #companyCategories {
+display: none;
 }
 
-
-
-.company .site {
-   font-size: 1.2em;
-}
-.company img {
+.companyCards{
+   display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	align-items: center;
    width: 80%;
    margin-left: 10%;
    margin-right: auto;
 }
+#companyCard{
+   background-color: var( --accent1-color);
+   color: var(--accent2-color);
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   padding: 0.5rem;
+   margin: 5px;
+}
+#companyCard p {
+   margin-block-end: 0;
+   margin-block-start: 0;
+}
 
+#companyCard img {
+   width: 100px;
+   height: 100px;
+   border-radius: 50%;
+   margin: auto;
+}
+#companyCard #companyCategories {
+   display: none;
+}
+#companyCard  #companyName {
+   text-align: center;
+   font-size: 2.3em;
+   font-family: var(--heading-font);
+   color: var(--secondary-color);
+}
+#companyCard p {
+   font-size: 1.2em;
+}
 .company .label {
    font-size: 1.1em;
    color: var(--secondary-color);
@@ -313,6 +385,7 @@ footer {
 
 .search {
    display: flex;
+   flex-direction: column;
    width: 80%;
    margin-left: 10%;
    margin-right: auto;
@@ -321,13 +394,11 @@ footer {
    color: var(--secondary-color);
    vertical-align: middle;
 }
-.search .categoryContainer {
+.search .categoryContainer, .search .ViewMode {
    display: flex;
-   width: 40%;
 }
 .search .textSearchContainer {
    display: flex;
-   width: 60%;
 }
 .textSearchContainer button {
    margin-right: 10px;

@@ -4,6 +4,9 @@ const categoriesSelect = document.querySelector('#categories');
 const categoriesList = [];
 const input = document.querySelector("#searchQuery")
 const inputBtn = document.querySelector("#searchQueryBtn")
+cardId = "companyCard"
+companiesClass = "companyCards"
+const modeSelector = document.querySelector("#viewMode")
 fetch(requestURL)
   .then(function (response) {
     return response.json();
@@ -15,21 +18,32 @@ fetch(requestURL)
  });
 
  categoriesSelect.addEventListener("change",searchByCategory)
- input.addEventListener("change",searchByNameOrDescription)
- inputBtn.addEventListener("click",searchByNameOrDescription)
+ input.addEventListener("change",searchByName)
+ inputBtn.addEventListener("click",searchByName)
+ modeSelector.addEventListener("change",changeViewMode)
 
- function searchByNameOrDescription() {
+ function changeViewMode() {
+  mode = modeSelector.value
+  cardId = mode
+  companiesClass = `${mode}s`
+  clearCompanies()
+  companiesJson.forEach(displayCompanies);
+  categoriesSelect.value = "All"
+  input.value = ""
+ }
+ function searchByName() {
+  categoriesSelect.value = "All"
   searchValue = input.value
   if (searchQuery == "") {
     clearCompanies()
     companiesJson.forEach(displayCompanies);
   }
-  else{    
+  else{
+    searchValue = searchValue.toLowerCase() 
     filteredCompanies = []
       if (companiesJson.length > 0) {
         companiesJson.forEach(company =>{ 
-          isSearchIn = (company.name.includes(searchValue) || company.description.includes(searchValue))
-          if (isSearchIn) {
+          if (company.name.toLowerCase().includes(searchValue)) {
             filteredCompanies.push(company)
           }
         })
@@ -43,6 +57,7 @@ fetch(requestURL)
     }
 }
   function searchByCategory() {
+    input.value = ""
     category = categoriesSelect.value
     if (category == "All") {
       clearCompanies()
@@ -91,43 +106,58 @@ fetch(requestURL)
   }
 
   function displayCompanies(company) {
-    // Create elements to add to the document
     let card = document.createElement('div');
-    card.className = "company"
-    let name = document.createElement('h3');
+    card.id = cardId
+    companies.className = companiesClass
+    let name = document.createElement('p');
     let logo = document.createElement('img');
-    let site = document.createElement('a')
+    let site = document.createElement('p')
     let membership = document.createElement('p')
     let addres = document.createElement('p')
     let phone = document.createElement('p')
-    let description = document.createElement('p')
     let categories = document.createElement('p')
-
-    name.textContent =  company.name
-    card.appendChild(name)
 
     logo.src = company.logoURL
     card.appendChild(logo)
 
-    site.href = company.website
-    site.className = "site"
-    site.text = "Website"
- 
+    name.textContent =  company.name
+    name.id = "companyName"
+    card.appendChild(name)
+
+    let link = document.createElement("a")
+    link.href = company.website
+    link.className = "site"
+    link.text = "Visit site"
+    site.appendChild(link)
+    site.id="companySite"
+    
+    if (cardId == "companyList") {
+      card.appendChild(document.createElement("br"))
+    }
+    
     card.appendChild(site)
 
-    membership.innerHTML = `<span class="label"> Membership level: </span>${company.membership}`
+    if (cardId == "companyCard") {
+      addres.innerHTML = `${company.addres}`
+      membership.innerHTML = `${company.membership} level`
+      phone.innerHTML = `${company.phone}`
+    } else {
+      membership.innerHTML = `<span class="label"> Membership level:</span><br>${company.membership}`
+      addres.innerHTML = `<span class="label"> Address:</span><br>${company.addres}`
+      phone.innerHTML = `<span class="label">Phone:</span><br>${company.phone}`
+    }
+    membership.id="companyMembership"
     card.appendChild(membership)
 
-    addres.innerHTML = `<span class="label"> Addres: </span>${company.addres}`
+    
+    addres.id="companyAddress"
     card.appendChild(addres)
 
-    phone.innerHTML = `<span class="label">Phone: </span>${company.phone}`
+    
+    phone.id="companyPhone"
     card.appendChild(phone)
 
-    description.innerHTML = `<span class="label">Description: </span>${company.description}`
-    card.appendChild(description)
-
-    categoriesText = '<span class="label">Categories: </span>'
+    categoriesText = '<span class="label">Categories:</span><br>'
     if (company.categories.length > 1) {
         company.categories.forEach( category =>{
             categoriesText += `${category}, `
@@ -142,6 +172,7 @@ fetch(requestURL)
         }
     }
    categories.innerHTML = categoriesText
+   categories.id="companyCategories"
    card.appendChild(categories)
 
    companies.appendChild(card)
