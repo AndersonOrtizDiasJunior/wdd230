@@ -119,11 +119,13 @@ footer {
     position: relative;
     text-align: center;
     color: white;
+    background-color: black;
+    padding: 0;
  }
  
  #hero img {
     width: 100%;
-    height: auto;
+    height: 100%;
  }
 
  #hero p {
@@ -450,11 +452,11 @@ display: none;
    margin: 15px 15px;
    border-radius: 5px;
 }
-.contact a {
+.link{
    text-decoration: none;
    color: var(--accent2-color);
 }
-.contact a:hover {
+.link:hover {
    color: var(--accent1-color);
 }
 #contactUsSection {
