@@ -355,7 +355,7 @@ display: none;
    flex-direction: column;
    text-align: center;
    padding: 0.5rem;
-   margin: 5px;
+   margin: 6px;
 }
 #companyCard p {
    margin-block-end: 0;
