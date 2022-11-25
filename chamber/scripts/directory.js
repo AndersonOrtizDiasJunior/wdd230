@@ -118,6 +118,7 @@ fetch(requestURL)
     let categories = document.createElement('p')
 
     logo.src = company.logoURL
+    logo.alt = `${name}'s logo`
     card.appendChild(logo)
 
     name.textContent =  company.name
@@ -126,7 +127,7 @@ fetch(requestURL)
 
     let link = document.createElement("a")
     link.href = company.website
-    link.className = "site"
+    link.className = "site link"
     link.text = "Visit site"
     site.appendChild(link)
     site.id="companySite"

@@ -290,7 +290,7 @@ footer {
 #companyList{
    width: 100%;
    padding: 15px;
-   background-color: var( --accent1-color);
+   background-color: var(--secondary-color);
    color: var(--accent2-color);
    margin-bottom: 5px;
    display: grid;
@@ -349,7 +349,7 @@ display: none;
    margin-right: auto;
 }
 #companyCard{
-   background-color: var( --accent1-color);
+   background-color: var( --secondary-color);
    color: var(--accent2-color);
    display: flex;
    flex-direction: column;
@@ -375,7 +375,7 @@ display: none;
    text-align: center;
    font-size: 2.3em;
    font-family: var(--heading-font);
-   color: var(--secondary-color);
+   color: var(--accent2-color);
 }
 #companyCard p {
    font-size: 1.2em;
