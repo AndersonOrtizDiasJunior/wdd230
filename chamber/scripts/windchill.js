@@ -1,8 +1,10 @@
 chillLabel = document.querySelectorAll(".windChill")
-speed = Number(document.querySelector(".windSpeed").textContent)
-temperature = Number(document.querySelector(".temperatureValue").textContent)
-speed.addEventListener('update', displayWindchill)
-temperature.addEventListener('update', displayWindchill)
+speedContainer = document.querySelector(".windSpeed")
+speed = Number(speedContainer.textContent)
+temperatureContainer = document.querySelector(".temperatureValue")
+temperature = Number(temperatureContainer.textContent)
+speedContainer.addEventListener('update', displayWindchill)
+temperatureContainer.addEventListener('update', displayWindchill)
 function displayWindchill() {
     if (isChillCalculable(temperature, speed)) {
         chillLabel.array.forEach(label => {
