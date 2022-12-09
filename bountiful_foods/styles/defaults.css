@@ -38,3 +38,50 @@ h1 {
     font-size: 3.5em;
 }
 
+.defaultMain {
+    padding: 15px 20% 5% 20%;
+    text-align: center;
+    color: var(--rich-black);
+    font-size: 1.3em;
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+.imgDataContainer {
+    display: flex;
+    background-color: var(--fern-green);
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.hunter-green-bg {
+    background-color: var(--hunter-green);
+}
+
+.fern-green-bg {
+    background-color: var(--fern-green);
+}
+
+.fiery-rose-bg {
+    background-color: var(--fiery-rose);
+}
+
+.imgDataContainer h2 {
+    color: white
+}
+
+.imgDataContainer img {
+    height: 5%;
+    max-height: 600px;
+    width: auto;
+}
+
+@media only screen and (max-width: 32.5em) {
+.defaultMain {
+    padding: 15px 0 5% 0;
+}
+}
