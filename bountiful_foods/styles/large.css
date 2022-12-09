@@ -1,0 +1,25 @@
+@media only screen and (min-width: 65em) {
+    #freshNav, #aboutNav {
+        display: block;
+    }
+
+    #hamBtn {
+        display: none;
+    }
+
+    header nav {
+        justify-content: space-around;
+    }
+
+    header nav img {
+        height: 80px;
+    }
+
+    header nav img:hover {
+        height: 100px;
+    }
+    header nav a:hover {
+        font-size: 1.3em;
+        color: var(--fiery-rose);
+    }
+}

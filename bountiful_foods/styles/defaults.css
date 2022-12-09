@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Barlow:wght@100&display=swap');
+
+:root {
+	--magic-mint: #baf5d6   ;
+    --rich-black: #06070E ;
+    --hunter-green: #355834;
+    --fern-green: #556f44;
+    --fiery-rose: #fb606a;
+
+	--heading-font: 'Amatic SC', cursive;
+    --paragraph-font: 'Barlow', sans-serif;
+}
+
+.noDecorationLink {
+    text-decoration: none;
+    color: inherit;
+}
+
