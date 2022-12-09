@@ -44,3 +44,14 @@
     .socialMediaLogo:hover {
         height: 60px;   
     }
+
+    main {
+        font-family: var(--paragraph-font);
+    }
+
+    #attrMain {
+        padding: 15px 20% 5% 20%;
+        text-align: center;
+        color: var(--rich-black);
+        font-size: 1.3em;
+    }
