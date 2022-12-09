@@ -18,8 +18,4 @@
     header nav img:hover {
         height: 100px;
     }
-    header nav a:hover {
-        font-size: 1.3em;
-        color: var(--fiery-rose);
-    }
 }

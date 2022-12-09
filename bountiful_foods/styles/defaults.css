@@ -16,3 +16,14 @@
     color: inherit;
 }
 
+.redBiggerLinkHover:hover {
+    font-size: 1.3em;
+    color: var(--fiery-rose);
+}
+
+.greenMintHeaderFont {
+    background-color: var(--magic-mint);
+    color: var(--rich-black);
+    font-family: var(--heading-font);
+    padding: 15px;
+}
