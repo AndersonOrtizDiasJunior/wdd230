@@ -1,20 +1,27 @@
-const currentTemp = document.querySelectorAll('.temperatureValue');
-const weatherIcon = document.querySelectorAll('.weatherIcon');
-const captionDesc = document.querySelectorAll('.sky');
-const windSpeed = document.querySelectorAll(".windSpeed")
-const API_key = '2647c7d72b6bd5c75dbfb3353f6b16be'
-const city_name = "Fairbanks"
-const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name}&appid=${API_key}&units=imperial`
-
-
+const currentTemp = document.querySelector('#temperature');
+const weatherIcon = document.querySelector('#weatherIcon');
+const minMaxTemp = document.querySelector('#minMaxTemp');
+const humidity = document.querySelector("#humidity")
+const descriptionLabel = document.querySelector("#description");
+const API_key = '2647c7d72b6bd5c75dbfb3353f6b16be';
+const city_name = "Carlsbad";
+const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city_name}&appid=${API_key}&units=imperial`;
+const current_day = new Date().getDay();
+const weekdayLabel = document.querySelector('#weekday')
+const forecast = document.querySelector('#forecast')
 async function apiFetch() {
     try {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // this is for testing the call
-        displayResults(data);
-        displayWindchill()
+        console.log(data)
+        setCurrentData(data.list[0]);
+        next_3_weathers = [data.list[8],data.list[16],data.list[24]]
+        day = current_day+1
+        next_3_weathers.forEach( weather => {
+          setForecast(weather,day)
+          day += 1
+        })
       } else {
           throw Error(await response.text());
       }
@@ -23,22 +30,61 @@ async function apiFetch() {
     }
   }
   
-  function displayResults(weatherData) {
-    currentTemp.forEach(temp => {
-      temp.textContent = weatherData.main.temp.toFixed(0);
-    })
-    
-    const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
-    const desc = weatherData.weather[0].description;
-    weatherIcon.forEach(icon => {
-      icon.setAttribute('src', iconsrc);
-      icon.setAttribute('alt', desc);
-    })
-    captionDesc.forEach(sky => {
-      sky.textContent = desc;
-    })
-    windSpeed.forEach(speed => {
-      speed.textContent = weatherData.wind.speed
-    })
+  function setCurrentData(weatherData) {
+    weekdayLabel.textContent = getWeekDay(current_day)
+    weather = weatherData.weather[0]
+    main = weatherData.main
+    currentTemp.textContent = `${main.temp}ºF`
+    const iconsrc = `https://openweathermap.org/img/w/${weather.icon}.png`;
+    minMaxTemp.textContent = `min: ${main.temp_min} / max: ${main.temp_max}`
+    humidity.textContent = `${main.humidity}% humidity`
+    weatherIcon.src = iconsrc
+    descriptionLabel.textContent = weather.description;
   }
+
+  function setForecast(weather, day) {
+      div = document.createElement("div")
+      div.className = "forecastDiv"
+  
+      dayLabel = document.createElement("span")
+      dayLabel.textContent = getWeekDay(day)
+      dayLabel.className = "forecastDay"
+      div.appendChild(dayLabel)
+
+      icon = document.createElement("img")
+      icon.src = `https://openweathermap.org/img/w/${weather.weather[0].icon}.png`;
+      icon.alt = "weather icon"
+      icon.className = "forecastIcon"
+      div.appendChild(icon)
+
+      temps = document.createElement("p")
+      temps.textContent = `${weather.main.temp_min}ºF / ${weather.main.temp_max}ºF`
+      temps.className = "forecastDescription"
+      div.appendChild(temps)
+
+      forecast.appendChild(div)
+  }
+
+  function getWeekDay(day) {
+    switch (day) {
+      case 0:
+        return 'Sun'
+      break;
+      case 1:
+        return 'Mon'
+      case 2:
+        return 'Tue'
+      case 3:
+        return 'Wed' 
+      case 4:
+        return 'Thu'  
+      case 5:
+        return 'Fri'       
+      case 6:
+        return 'Sat'    
+    }
+  }
+
+
   apiFetch();
+  console.log()

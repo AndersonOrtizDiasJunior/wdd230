@@ -23,4 +23,10 @@
     #mainHero img{ 
         width: 60%;
     }
+
+    #weatherAndDrinks {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }

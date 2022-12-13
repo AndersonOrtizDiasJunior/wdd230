@@ -70,3 +70,66 @@
     #mainHero img {
         width: 100%;
     }
+
+    #mainWeather {
+        /* background-color: var(--fiery-rose); */
+        padding: 20px;
+        text-align: center;
+    }
+
+    #mainWeather img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #mainWeather h3 {
+        font-size: 2em;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    
+    #mainWeather #tempIcon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+        
+    #mainWeather #weekday {
+        font-size: 1.3em;
+    }
+
+    #weather #weatherInfo {
+       text-align: left;
+       padding: 15px;
+    }
+
+    #weatherInfo #temperature {
+        font-size: 2em;
+    }
+
+    #city {
+        font-size: 2em;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    #temperature, #description, #weekday {
+        font-size: 1.7em;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    #forecast {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+
+    .forecastDiv {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
