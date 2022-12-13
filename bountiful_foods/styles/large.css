@@ -18,4 +18,8 @@
     header nav img:hover {
         height: 100px;
     }
+
+    #mainHero, #mainHeroContent h3 {
+        font-size: 2em;
+    }
 }

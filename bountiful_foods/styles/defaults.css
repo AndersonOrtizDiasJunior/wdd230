@@ -70,6 +70,10 @@ p {
     background-color: var(--fiery-rose);
 }
 
+.rich-black-bg {
+    background-color: var(--rich-black);
+}
+
 .imgDataContainer h2 {
     color: white
 }
@@ -79,6 +83,27 @@ p {
     max-height: 600px;
     width: auto;
 }
+
+.buttonLink {
+    color: white;
+    font-family: var(--heading-font);
+    border-radius: 15px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.buttonLink:hover {
+    background-color: var(--fiery-rose);
+}
+
+.buttonLink.fiery-rose-bg:hover {
+    background-color: var(--rich-black);
+}
+
+.left, .right {
+    flex: 1;
+  }
 
 @media only screen and (max-width: 32.5em) {
 .defaultMain {

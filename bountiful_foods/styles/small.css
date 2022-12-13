@@ -49,4 +49,24 @@
         font-family: var(--paragraph-font);
     }
 
-    
+    #mainHero {
+        background-color: var(--fern-green);
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 1.3em;
+        text-align: center;
+        gap: 30px;
+    }
+
+    #mainHero h3 {
+        color: white;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        font-size: 2em;
+    }
+
+    #mainHero img {
+        width: 100%;
+    }

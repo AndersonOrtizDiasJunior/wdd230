@@ -2,4 +2,25 @@
     header nav img {
         height: 80px;
     }
+
+    #mainHero { 
+        flex-direction: row;
+        padding: 0;
+        gap: 10%;
+    }
+
+    #mainHeroContent {
+        text-align: center;
+        padding: 15px 0;
+    }
+    #mainHeroContent h3 {
+        font-size: 1.5em;
+    }
+    #mainHeroContent p {
+        text-align: left;
+    }
+
+    #mainHero img{ 
+        width: 60%;
+    }
 }
