@@ -155,3 +155,32 @@
     #weatherAndDrinks {
     margin-top: 10%;
     }
+
+    #cityInfo  {
+        margin-top: 10%;
+        background-color: var(--hunter-green);
+        color: white;
+    }
+
+    #cityInfo img {
+        width: 100%;
+    }
+
+    .cityImageAndText {
+    font-size: 1.3em;
+    text-align: center;
+    letter-spacing: 2px;
+    }
+
+    .cityImageAndText div {
+        padding: 15px;
+    }
+    .cityImageAndText h2, h2.showOnSmall  {
+        font-size: 2em;
+    }
+
+    .cityImageAndText h2,  .cityImageAndText p {
+        margin-block-start: 0;
+        margin-block-end: 0;    
+        color: white;
+        }

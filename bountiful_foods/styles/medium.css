@@ -29,4 +29,14 @@
         align-items: stretch;
         justify-content: space-around;
     }
+
+    .cityImageAndText {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #cityInfo img {
+        width: 70%;
+    }
 }
