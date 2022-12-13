@@ -45,7 +45,7 @@
         height: 60px;   
     }
 
-    main {
+    main,body {
         font-family: var(--paragraph-font);
         background-color: #F0F5F2;
     }
@@ -183,4 +183,12 @@
         margin-block-start: 0;
         margin-block-end: 0;    
         color: white;
-        }
+    }
+
+    .aboutMain {
+        padding: 15px 20% 5% 20%;
+        text-align: center;
+        color: var(--rich-black);
+        font-size: 1.3em;
+        background-color: #F0F5F2;
+    }
