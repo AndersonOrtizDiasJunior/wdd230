@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="bontiful foods about page">
+    <meta name="description" content="bontiful foods fresh page">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/defaults.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
-    <title>About us - Bountiful Foods</title>
+    <title>Fresh - Bountiful Foods</title>
 </head>
 <body>
     <header>
@@ -27,6 +27,33 @@
         </div>
     </header>
     <main>
+        <div id="freshDiv">
+            <div id="drinkImageDiv">
+                <h1>Fresh</h1>
+                <div></div>
+                <img src="images/fresh.webp">
+            </div>
+            <div id="orderDiv">
+                <h2>Make your drink</h2>
+                <form method="get" action="thankyou.html">
+                    <label for="fname"      >First Name             </label><input type="text"      name="fname"    id="fname"      required><br>
+                    <label for="email"      >E-mail                  </label><input type="email"     name="email"    id="email"      placeholder="example@email.com"><br>
+                    <label for="cell"       >Phone Number                   </label><input type="tel"       name="cell"     id="cell"       required><br>
+                    Fruits
+                    <select name="fruit_1" id="fruit_1" required>
+                        <option value="Select">Select the first fruit</option>
+                    </select>
+                    <select name="fruit_2" id="fruit_2" required>
+                        <option value="Select">Select the second fruit</option>
+                    </select>
+                    <select name="fruit_3" id="fruit_3" required>
+                        <option value="Select">Select the third fruit</option>
+                    </select>
+                    <br>
+                    <button class="buttonLink rich-black-bg" type="submit">Order</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="greenMintHeaderFont">
         <div id="footerSocialMedia">
@@ -51,5 +78,6 @@
     <script src="scripts/responsive-menu.js"></script>
     <script src="scripts/dateupdate.js"></script>
     <script src="scripts/lazyLoader.js"></script>
+    <script src="scripts/fruits.js"></script>
 </body>
 </html>

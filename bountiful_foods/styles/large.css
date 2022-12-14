@@ -3,6 +3,10 @@
         display: block;
     }
 
+    .aboutMain {
+        padding: 15px 20% 5% 20%; 
+    }
+
     #hamBtn {
         display: none;
     }
@@ -22,4 +26,38 @@
     #mainHero, #mainHeroContent h3 {
         font-size: 2em;
     }
+
+    #freshDiv {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #freshDiv img {
+        height: 100%;
+        z-index: 1;
+    }
+
+    #drinkImageDiv{
+        height: 100%;
+        grid-column: 1/2;
+    } 
+
+    #drinkImageDiv div {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        right: -50%;
+    }
+
+
+    #drinkImageDiv img {
+        position: relative;
+        height: 100%;
+        left: -50%;
+    }
+
+    #orderDiv {
+        grid-column: 2/3;
+    }
+
 }

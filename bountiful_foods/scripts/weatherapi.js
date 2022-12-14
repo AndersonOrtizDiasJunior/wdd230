@@ -14,7 +14,6 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data)
         setCurrentData(data.list[0]);
         next_3_weathers = [data.list[8],data.list[16],data.list[24]]
         day = current_day+1
@@ -87,4 +86,3 @@ async function apiFetch() {
 
 
   apiFetch();
-  console.log()
