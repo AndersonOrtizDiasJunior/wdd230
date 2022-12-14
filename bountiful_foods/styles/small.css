@@ -23,9 +23,9 @@
         background-color: var(--fiery-rose);
         font-family: var(--heading-font);
         color: var(--rich-black);
-        padding: 5px;
+        padding: 0;
         font-size: 2em;
-        text-align: center;
+        text-align: left;
     }
 
     #logo {
@@ -158,7 +158,7 @@
 
     #cityInfo  {
         margin-top: 10%;
-        background-color: var(--hunter-green);
+        background-color: var(--fern-green);
         color: white;
     }
 
@@ -246,4 +246,29 @@
         position: absolute;
         color: white;
 
+    }
+    #ordersDiv {
+        margin-top: 5%;
+        font-size: 2em;
+    }
+    #menuItems a {
+        padding-left: 5px;
+    }
+
+    #menuItems a:first-child {
+        border-width: 1px 1px .5px 1px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    #menuItems a:not(:first-child):not(:last-child) {
+        border-width: .5px 1px .5px 1px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    #menuItems a:last-child {
+        border-width: .5px 1px 1px 1px;
+        border-style: solid;
+        border-color: black;
     }
