@@ -71,8 +71,15 @@
     #mainHero img {
         width: 100%;
     }
+    #mainWeather.loading {
+        display: block;
+    }
 
+    #mainWeather.loading h2{
+        font-size: 3em;
+    }
     #mainWeather {
+        display: none;
         padding: 20px;
         text-align: center;
         background-color: white;
