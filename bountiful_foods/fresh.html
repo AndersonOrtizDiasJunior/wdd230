@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/snackbar.css">
     <title>Fresh - Bountiful Foods</title>
 </head>
 <body>
@@ -36,28 +37,30 @@
             </div>
             <div id="orderDiv">
                 <h2>Make your drink</h2>
-                <form method="get" action="thankyou.html">
+                <form action="" method="POST" enctype="multipart/form-data" onsubmit="return check(event)">
                     <label for="fname"      >First Name             </label><input type="text"      name="fname"    id="fname"      required><br>
                     <label for="email"      >E-mail                  </label><input type="email"     name="email"    id="email"      placeholder="example@email.com"><br>
                     <label for="cell"       >Phone Number                   </label><input type="tel"       name="cell"     id="cell"       required><br>
                     Fruits
                     <select name="fruit_1" id="fruit_1" required>
-                        <option value="Select">Select the first fruit</option>
+                        <option value="" selected>Select the first fruit</option>
                     </select>
-                    <select name="fruit_2" id="fruit_2" required>
-                        <option value="Select">Select the second fruit</option>
+                    <select name="fruit_2" id="fruit_2">
+                        <option value="" selected>Select the second fruit</option>
                     </select>
-                    <select name="fruit_3" id="fruit_3" required>
-                        <option value="Select">Select the third fruit</option>
+                    <select name="fruit_3" id="fruit_3">
+                        <option value="" selected>Select the third fruit</option>
                     </select>
                     <br>
+                    <label for="instructions">Special Instructions  </label><br><textarea               name="instructions"     id="instructions"       rows="4"></textarea><br>
                     <button class="buttonLink rich-black-bg" type="submit">Order</button>
                 </form>
             </div>
         </div>
         <div id="ordersDiv">
-            <h2>Orders</h2>
+            <h2>My Orders</h2>
         </div>
+        <div id="snackbar"></div>
     </main>
     <footer class="greenMintHeaderFont">
         <div id="footerSocialMedia">

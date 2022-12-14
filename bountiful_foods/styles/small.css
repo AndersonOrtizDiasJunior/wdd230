@@ -203,7 +203,7 @@
         color: white;
     }
 
-    #orderDiv form input,  #orderDiv form select{
+    #orderDiv form input,  #orderDiv form select, #orderDiv form textarea{
       width: 100%;
       box-sizing: border-box;
       border-radius: 10px;
@@ -272,3 +272,41 @@
         border-style: solid;
         border-color: black;
     }
+    #ordersDiv {
+        margin-bottom: 5%;
+    }
+    #orderCards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        align-items: flex-start;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 10%;
+        margin-right: auto;
+     }
+
+     .order{
+        background-color: white;
+        box-sizing: border-box;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding: 30px;
+        margin: 6px;
+        border-radius: 5px;
+        border: 5px double var(--rich-black);
+     }
+
+     .order p {
+        margin-block-end: 0;
+        margin-block-start: 0;
+     }
+     .order .smaller {
+        font-size: .6em;
+     }
+     .order .label {
+        font-weight: bold;
+        font-family: var(--heading-font);
+        font-size: 1.2em;
+     }
