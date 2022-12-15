@@ -30,8 +30,8 @@ async function apiFetch() {
   }
   
   function setCurrentData(weatherData) {
-    document.querySelector("#mainWeather").style.display = "block"
-    document.querySelector(".loading").style.display = "none"
+    document.querySelector(".mainWeather").style.display = "block"
+    document.querySelector("#loading").style.display = "none"
     weekdayLabel.textContent = getWeekDay(current_day)
     weather = weatherData.weather[0]
     main = weatherData.main

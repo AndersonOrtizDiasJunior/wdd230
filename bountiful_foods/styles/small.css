@@ -71,38 +71,38 @@
     #mainHero img {
         width: 100%;
     }
-    #mainWeather.loading {
+   .mainWeather#loading {
         display: block;
     }
 
-    #mainWeather.loading h2{
+   .mainWeather#loading h2{
         font-size: 3em;
     }
-    #mainWeather {
+   .mainWeather{
         display: none;
         padding: 20px;
         text-align: center;
         background-color: white;
     }
 
-    #mainWeather img {
+   .mainWeather img {
         width: 50px;
         height: 50px;
     }
 
-    #mainWeather h3 {
+   .mainWeather h3 {
         font-size: 2em;
         margin-block-start: 0;
         margin-block-end: 0;
     }
     
-    #mainWeather #tempIcon {
+   .mainWeather #tempIcon {
         display: flex;
         justify-content: center;
         align-items: center;
     }
         
-    #mainWeather #weekday {
+   .mainWeather #weekday {
         font-size: 1.3em;
     }
 
@@ -115,7 +115,7 @@
         font-size: 2em;
     }
 
-    #city {
+    .city {
         font-size: 2em;
         margin-block-start: 0;
         margin-block-end: 0;
@@ -142,7 +142,7 @@
         flex-direction: column;
     }
 
-    #mainDrinks {
+    .mainDrinks {
         text-align: center;
         font-size: 2em;
         background-color: var(--hunter-green);
@@ -154,7 +154,7 @@
         color: white;
     }
 
-    #mainDrinks.nodrinks {
+    .mainDrinks#nodrinks {
         display: none;
     }
 
