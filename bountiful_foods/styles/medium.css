@@ -36,7 +36,7 @@
         align-items: center;
     }
 
-    .cityInfo img {
+    #cityInfo img {
         width: 70%;
     }
 }
